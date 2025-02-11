@@ -1,5 +1,3 @@
-/*arquivo css*/
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +6,6 @@
 }
 
 /*menu*/
-
 .menu {
   width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
@@ -25,7 +22,7 @@
   font-family: "Poppins";
   font-size: 24px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 400;
   color: #EB5757;
   display: inline-block;
   margin-top: 35px;
@@ -37,8 +34,8 @@
 
 .menu__categorias-item {
   font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   color: #A1A1A1;
   text-decoration: none;
   padding: 40px;
@@ -50,7 +47,6 @@
 }
 
 /*acomodações container*/
-
 .acomodacoes__container {
   width: 90%;
   max-width: 1240px;
@@ -59,7 +55,6 @@
 }
 
 /*cabeçalho acomodações*/
-
 .acomodacoes__header {
   height: 34px;
   position: relative;
@@ -94,7 +89,7 @@
 .acomodacoes__item {
   width: calc(33.33% - 20px);
   height: 408px;
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 .acomodacoes__imagem {
@@ -105,16 +100,15 @@
 }
 
 /*informações da acomodação*/
-
 .info__acomodacao {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .info__avaliacao {
   display: inline-block;
   font-family: "Montserrat";
   color: #515151;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
   vertical-align: middle;
   margin-top: 6px;
@@ -123,6 +117,9 @@ margin-top: 10px;
 
 .info__avaliacao-estrela {
   vertical-align: middle;
+  width: 25px;
+  height: auto;
+  animation: glow 1.5s infinite ease-in-out;
 }
 
 .info__avaliacao-nota {
@@ -139,7 +136,7 @@ margin-top: 10px;
   color: white;
   font-family: "Montserrat";
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 20px;
   font-size: 16px;
   padding: 7px;
@@ -151,7 +148,7 @@ margin-top: 10px;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 300;
   font-family: "Montserrat";
   margin-top: 6px;
 }
@@ -159,57 +156,57 @@ margin-top: 10px;
 .info__text {
   width: 100%;
   font-family: "Montserrat";
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 28px;
   margin-top: 10px;
 }
 
+/* Responsividade para telas menores */
 @media screen and (max-width: 900px) {
-
   .menu {
     box-shadow: none;
   }
 
   .menu__container {
-  width: 100%;
-  height: auto;
-  display: contents;
+    width: 100%;
+    height: auto;
+    display: contents;
   }
 
-.menu__logo {
-  display: flex;
-  justify-content: center;
+  .menu__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu__categorias-item {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .acomodacoes__title {
+    text-align: center;
+  }
+
+  .acomodacoes__quantidade {
+    text-align: center;
+  }
+
+  .acomodacoes__item {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+  }
+
+  .acomodacoes__imagem {
+    height: auto;
+    max-height: 250px;
+  }
+
+  .info__avaliacao-estrela {
+    width: 16px;
+  }
 }
-
-.menu__categorias-item {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  font-size: 18px;
-}
-
-.acomodacoes__title {
-  text-align: center;
-}
-
-.acomodacoes__quantidade {
-  text-align: center;
-}
-
-.acomodacoes__item {
-  margin: auto;
-  margin-bottom: 40px;
-  width: 100%;
-  height: auto;
-}
-
-.acomodacoes__imagem {
-  height: auto;
-}
-
-}
-
-
-
-
